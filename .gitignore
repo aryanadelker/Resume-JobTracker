@@ -1,0 +1,23 @@
+
+# Private configuration and credentials
+.env
+config/db.php
+
+# User-uploaded documents
+uploads/*
+!uploads/.htaccess
+
+# Temporary files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+
+# Old raw database backup
+database/jobtrackerdb_backup/
+
+# MySQL Shell export (until sanitized)
+database/jobtrackerdb_export/
