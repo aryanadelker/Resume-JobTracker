@@ -154,7 +154,7 @@ $jobs = $stmt->get_result();
 
     </div>
 </div>
-
+<?php include __DIR__ . '/includes/accessibility_widget.php'; ?>
 </body>
 </html>
 

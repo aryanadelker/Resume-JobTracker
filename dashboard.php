@@ -59,6 +59,6 @@ require_once "includes/auth.php";
 
     </div>
 </div>
-
+<?php include __DIR__ . '/includes/accessibility_widget.php'; ?>
 </body>
 </html>
