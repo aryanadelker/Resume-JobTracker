@@ -16,6 +16,24 @@ A web-based Resume and Job Application Tracker developed using PHP, MySQL, HTML,
 - Admin dashboard
 - Activity logs
 
+### Custom Accessibility Settings
+
+The application includes custom accessibility settings to improve usability and provide a more comfortable browsing experience.
+
+**Available options:**
+- Adjustable text size (Small, Normal, Large, Extra Large)
+- High contrast mode
+- Readable font option
+- Reduced motion
+- Larger cursor
+- Increased text spacing
+
+**Additional functionality:**
+- Saves accessibility preferences in MySQL for logged-in users.
+- Uses browser local storage as an immediate fallback.
+- Restores saved preferences when the user revisits the application.
+
+
 ## Technologies Used
 
 - **Frontend:** HTML, CSS, JavaScript
