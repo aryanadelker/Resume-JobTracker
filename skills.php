@@ -237,6 +237,12 @@ $assigned_skills = $assigned_stmt->get_result();
             Manage the skills associated with your resumes
         </p>
 
+        <p style="margin:16px 0;">
+            <a href="skill_gap_analyzer.php" style="display:inline-block;padding:10px 16px;background:#3156a3;color:white;text-decoration:none;border-radius:6px;">
+                Open Skill Gap Analyzer
+            </a>
+        </p>
+
         <?php if ($message !== ""): ?>
             <div class="success-message">
                 <?= htmlspecialchars($message) ?>
