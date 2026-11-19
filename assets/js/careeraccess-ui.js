@@ -1,0 +1,2 @@
+// Optional mobile menu helper. Add data-ca-menu to a button and data-ca-sidebar to sidebar.
+document.addEventListener("DOMContentLoaded",()=>{const b=document.querySelector("[data-ca-menu]"),s=document.querySelector("[data-ca-sidebar]");if(!b||!s)return;b.addEventListener("click",()=>{const open=s.classList.toggle("ca-sidebar-open");b.setAttribute("aria-expanded",String(open));});});

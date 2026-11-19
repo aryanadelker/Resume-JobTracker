@@ -9,56 +9,97 @@ require_once "includes/auth.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard | Resume & Job Tracker</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/careeraccess-theme.css">
 </head>
 
 <body>
 
-<div class="register-container">
-    <div class="register-card">
+<div class="ca-layout">
 
-        <h1>Welcome, <?= htmlspecialchars($_SESSION['full_name']) ?>!</h1>
+    <!-- Sidebar -->
+    <aside class="ca-sidebar">
 
-        <p class="subtitle">
-            Resume & Job Application Tracker Dashboard
-        </p>
+        <h2>CareerAccess</h2>
 
-        <p><strong>Email:</strong>
-            <?= htmlspecialchars($_SESSION['email']) ?>
-        </p>
+        <nav class="ca-nav">
+            <a href="dashboard.php">Dashboard</a>
+            <a href="profile.php">My Profile</a>
+            <a href="resume.php">My Resumes</a>
+            <a href="skills.php">My Skills</a>
+            <a href="jobs.php">Browse Jobs</a>
+            <a href="my_applications.php">My Applications</a>
+            <a href="application_history.php">Application History</a>
+            <a href="interviews.php">My Interviews</a>
+            <a href="offers.php">My Job Offers</a>
+            <a href="reminders.php">My Reminders</a>
+            <a href="notifications.php">My Notifications</a>
+            <a href="activity_logs.php">Activity Logs</a>
+            <a href="logout.php" class="logout-link">Logout</a>
+        </nav>
 
-        <p><strong>Role:</strong>
-            <?= htmlspecialchars($_SESSION['role']) ?>
-        </p>
+    </aside>
 
-        <p style="margin-top: 20px;">
-            You have successfully logged in.
-        </p>
+    <!-- Main Content -->
+    <main class="ca-main">
 
-        
-<div class="dashboard-links">
+        <header class="ca-topbar">
+            <h2>Dashboard</h2>
+            <span>Welcome, <?= htmlspecialchars($_SESSION['full_name']) ?></span>
+        </header>
 
-    <h2>Dashboard Menu</h2>
+        <section class="ca-content">
 
-    <a href="profile.php">My Profile</a>
-    <a href="resume.php">My Resumes</a>
-    <a href="skills.php">My Skills</a>
-    <a href="jobs.php">Browse Jobs</a>
-    <a href="my_applications.php">My Applications</a>
-    <a href="application_history.php">Application History</a>
-    <a href="interviews.php">My Interviews</a>
-    <a href="offers.php">My Job Offers</a>
-    <a href="reminders.php">My Reminders</a>
-    <a href="notifications.php">My Notifications</a>
-    <a href="activity_logs.php">Activity Logs</a>
+            <div class="ca-card">
 
-    <a href="logout.php" class="logout-link">Logout</a>
+                <h1>Welcome, <?= htmlspecialchars($_SESSION['full_name']) ?>!</h1>
+
+                <p>Your Resume & Job Application Tracker</p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <?= htmlspecialchars($_SESSION['email']) ?>
+                </p>
+
+                <p>
+                    <strong>Role:</strong>
+                    <?= htmlspecialchars($_SESSION['role']) ?>
+                </p>
+
+                <p>You have successfully logged in.</p>
+
+            </div>
+
+            <div class="ca-card">
+
+                <h2>Quick Access</h2>
+
+                <div class="dashboard-links">
+                    <a class="ca-btn" href="profile.php">My Profile</a>
+                    <a class="ca-btn" href="resume.php">My Resumes</a>
+                    <a class="ca-btn" href="skills.php">My Skills</a>
+                    <a class="ca-btn" href="jobs.php">Browse Jobs</a>
+                    <a class="ca-btn" href="my_applications.php">My Applications</a>
+                    <a class="ca-btn" href="application_history.php">Application History</a>
+                    <a class="ca-btn" href="interviews.php">My Interviews</a>
+                    <a class="ca-btn" href="offers.php">My Job Offers</a>
+                    <a class="ca-btn" href="reminders.php">My Reminders</a>
+                    <a class="ca-btn" href="notifications.php">My Notifications</a>
+                    <a class="ca-btn" href="activity_logs.php">Activity Logs</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 
 </div>
 
-
-    </div>
-</div>
 <?php include __DIR__ . '/includes/accessibility_widget.php'; ?>
+
+<script src="assets/js/careeraccess-ui.js"></script>
+
 </body>
 </html>
